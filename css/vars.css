@@ -1,0 +1,19 @@
+:root {
+  --main-bg-color: #fff;
+  --sub-bg-color: #000;
+  --main-text-color: #000;
+  --sub-text-color: #fff;
+  --inactive: #818181;
+  --success: #bee3be;
+  --link-color: blue;
+  --accent-color: #ff0000;
+  --active: #6bff21;
+
+  --first-brand-color: #c0c0c0;
+  --second-brand-color: #1c2597;
+
+  --main-font: 'Roboto Mono';
+  --title-font: 'Roboto Mono Bold';
+
+  font-size: 62.5%;
+}
