@@ -90,11 +90,12 @@ function increment(e) {
     //     e.currentTarget.classList.add('disable-btn');
     // }
 
-    if(Number(amountSpan.textContent) == currentProduct.nutraRange.length){
-        e.currentTarget.classList.add('disable-btn');
-    }
-
     if(currentProduct.type == 'nutra'){
+
+        if(Number(amountSpan.textContent) == currentProduct.nutraRange.length){
+            e.currentTarget.classList.add('disable-btn');
+        }
+
         calculateTotalNutra(Number(amountSpan.textContent), currentProduct);
     }else{
         calculateTotal(Number(amountSpan.textContent));
@@ -133,7 +134,7 @@ function calculateTotal(amount) {
 }
 
 function calculateTotalNutra(amount, product) {
-    priceSpan.textContent = `${amount} bottle${amount>1 ? 's' : ''} for $${(product.nutraRange[amount-1]).toFixed(2)}`;
+    priceSpan.textContent = `${amount}x for $${(product.nutraRange[amount-1]).toFixed(2)}`;
 }
 
 
