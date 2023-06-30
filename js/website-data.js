@@ -8,6 +8,7 @@ export const WEBSITE_RETURN_ADDRESS = '1025 Industry Rd Harrodsburg, KY 40330, U
 export const WEBSITE_DESCRIPTOR = '8449263651piecesofchar';
 export const WEBSITE_FULFILLMENT = 'Fulfill Brokerage Inc.';
 
+const templateNumber = 'new-template-259';
 
 let websiteName = document.querySelectorAll('.js_website-name');
 let websiteUrl = document.querySelectorAll('.js_website-url');
